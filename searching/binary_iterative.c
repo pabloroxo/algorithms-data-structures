@@ -5,15 +5,19 @@
 
 #include <stdio.h>
 
+void swap(int *i, int *j) {
+    int temp = *i;
+    *i = *j;
+    *j = temp;
+}
+
 void sort(int numbers[], int size) {
-    int i, j, temp;
+    int i, j;
 
     for (i = 0; i < size - 1; i++) {
         for (j = i + 1; j < size; j++) {
             if (numbers[i] > numbers[j]) {
-                temp = numbers[i];
-                numbers[i] = numbers[j];
-                numbers[j] = temp;
+                swap(&numbers[i], &numbers[j]);
             }
         }
     }
