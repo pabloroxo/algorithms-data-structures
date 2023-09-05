@@ -1,6 +1,6 @@
 /* Pablo Roxo - https://github.com/pabloroxo
  *
- * Binary sort
+ * Bubble sort
  */
 
 #include <stdio.h>
