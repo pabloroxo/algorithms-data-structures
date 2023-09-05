@@ -1,9 +1,9 @@
-#include <stdio.h>
-
 /* Pablo Roxo - https://github.com/pabloroxo
  *
  * Binary search (iteratively)
  */
+
+#include <stdio.h>
 
 void sort(int numbers[], int size) {
     int i, j, temp;

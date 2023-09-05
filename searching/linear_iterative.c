@@ -1,9 +1,9 @@
-#include <stdio.h>
-
 /* Pablo Roxo - https://github.com/pabloroxo
  *
  * Linear search (iteratively)
  */
+
+#include <stdio.h>
 
 int search(int numbers[], int number, int size) {
     int i = 0, found = 0;

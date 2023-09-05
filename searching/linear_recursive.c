@@ -1,9 +1,9 @@
-#include <stdio.h>
-
 /* Pablo Roxo - https://github.com/pabloroxo
  *
  * Linear search (recursively)
  */
+
+#include <stdio.h>
 
 int search(int numbers[], int number, int i, int size) {
     if (numbers[i] == number) {
