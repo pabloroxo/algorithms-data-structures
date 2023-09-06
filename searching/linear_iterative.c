@@ -6,9 +6,9 @@
 #include <stdio.h>
 
 int search(int numbers[], int number, int size) {
-    int i = 0, found = 0;
+    int i = 0;
 
-    while (i < size && !found) {
+    while (i < size) {
         if (numbers[i] == number) {
             return i;
         } else {
