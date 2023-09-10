@@ -14,9 +14,9 @@ void swap(int *i, int *j) {
 void selectionSort(int numbers[], int size) {
     int i, j, min;
 
-    for (i = 0; i < size - 1; i++) {
+    for (i = 0; i < (size - 1); i++) {
         min = i;
-        for (j = i + 1; j < size; j++) {
+        for (j = (i + 1); j < size; j++) {
             if (numbers[min] > numbers[j]) {
                 min = j;
             }

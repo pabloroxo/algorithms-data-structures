@@ -10,11 +10,11 @@ void insertionSort(int numbers[], int size) {
 
     for (i = 1; i < size; i++) {
         key = numbers[i];
-        j = i - 1;
+        j = (i - 1);
 
-        while (j >= 0 && numbers[j] > key) {
+        while ((j >= 0) && (numbers[j] > key)) {
             numbers[j + 1] = numbers[j];
-            j = j - 1;
+            j = (j - 1);
         }
 
         numbers[j + 1] = key;

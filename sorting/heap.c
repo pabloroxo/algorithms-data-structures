@@ -13,14 +13,14 @@ void swap(int *i, int *j) {
 
 void heapify(int numbers[], int size, int i) {
     int max = i;
-    int left = 2 * i + 1;
-    int right = 2 * i + 2;
+    int left = (2 * i + 1);
+    int right = (2 * i + 2);
 
-    if (left < size && numbers[left] > numbers[max]) {
+    if ((left < size) && (numbers[left] > numbers[max])) {
         max = left;
     }
 
-    if (right < size && numbers[right] > numbers[max]) {
+    if ((right < size) && (numbers[right] > numbers[max])) {
          max = right;
     }
 
@@ -31,11 +31,11 @@ void heapify(int numbers[], int size, int i) {
 }
 
 void heapSort(int numbers[], int size) {
-    for (int i = size / 2 - 1; i >= 0; i--) {
+    for (int i = ((size / 2) - 1); i >= 0; i--) {
          heapify(numbers, size, i);
     }
 
-    for (int i = size - 1; i >= 0; i--) {
+    for (int i = (size - 1); i >= 0; i--) {
         swap(&numbers[0], &numbers[i]);
 
         heapify(numbers, i, 0);

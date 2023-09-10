@@ -7,8 +7,8 @@
 
 void merge(int numbers[], int left, int i, int right) {
     int j, k, l;
-    int n1 = i - left + 1;
-    int n2 = right - i;
+    int n1 = (i - left + 1);
+    int n2 = (right - i);
     int leftArray[n1], rightArray[n2];
 
     for (j = 0; j < n1; j++) {
@@ -23,7 +23,7 @@ void merge(int numbers[], int left, int i, int right) {
     k = 0;
     l = left;
 
-    while (j < n1 && k < n2) {
+    while ((j < n1) && (k < n2)) {
         if (leftArray[j] <= rightArray[k]) {
             numbers[l] = leftArray[j];
             j++;
@@ -49,10 +49,10 @@ void merge(int numbers[], int left, int i, int right) {
 
 void mergeSort(int numbers[], int left, int right) {
     if (left < right) {
-        int i = left + (right - left) / 2;
+        int i = (left + ((right - left) / 2));
 
         mergeSort(numbers, left, i);
-        mergeSort(numbers, i + 1, right);
+        mergeSort(numbers, (i + 1), right);
 
         merge(numbers, left, i, right);
     }

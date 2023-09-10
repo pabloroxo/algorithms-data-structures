@@ -13,7 +13,7 @@ void swap(int *i, int *j) {
 
 int partition(int numbers[], int low, int high) {
     int pivot = numbers[high];
-    int i = low - 1;
+    int i = (low - 1);
     int j;
 
     for (j = low; j < high; j++) {
@@ -31,8 +31,8 @@ int partition(int numbers[], int low, int high) {
 void quicksort(int numbers[], int low, int high) {
     if (low < high) {
         int p = partition(numbers, low, high);
-        quicksort(numbers, low, p - 1);
-        quicksort(numbers, p + 1, high);
+        quicksort(numbers, low, (p - 1));
+        quicksort(numbers, (p + 1), high);
     }
 }
 
