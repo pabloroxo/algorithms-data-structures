@@ -17,9 +17,13 @@ input.txt:
 ### Sorting algorithms
 
 - Bubble sort
+- Cocktail sort
+- Comb sort
+- Gnome sort
 - Heap sort
 - Insertion sort
 - Merge sort
+- Odd-even sort
 - Quick sort
 - Selection sort
 
