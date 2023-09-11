@@ -25,7 +25,7 @@ int partition(int numbers[], int low, int high) {
 
     swap(&numbers[i + 1], &numbers[high]);
 
-    return i + 1;
+    return (i + 1);
 }
 
 void quicksort(int numbers[], int low, int high) {

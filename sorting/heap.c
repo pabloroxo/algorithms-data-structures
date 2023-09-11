@@ -13,8 +13,8 @@ void swap(int *i, int *j) {
 
 void heapify(int numbers[], int size, int i) {
     int max = i;
-    int left = (2 * i + 1);
-    int right = (2 * i + 2);
+    int left = ((2 * i) + 1);
+    int right = ((2 * i) + 2);
 
     if ((left < size) && (numbers[left] > numbers[max])) {
         max = left;
